@@ -22,6 +22,7 @@ jquery打包到vendor，webpack运行文件打包到runtime
 ### 以下为测试CommonsChunkPlugin所经历的步骤
 
 A:
+
 1.入口文件只有两个入口index result
 
 2.plugins里只有CommonsChunkPlugin({name: 'common'})
@@ -34,6 +35,7 @@ A:
   })([(function(){...common原来的内容})])
 
 B:
+
 1.入口文件还是只有只有两个入口index result
 
 2.此时plugins加CommonsChunkPlugin({name: 'manifest'})
